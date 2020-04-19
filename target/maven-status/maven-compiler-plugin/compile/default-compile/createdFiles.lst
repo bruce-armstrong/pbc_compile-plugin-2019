@@ -1,0 +1,16 @@
+hudson\plugins\pbc_compile\PbcCompileInstallation$DescriptorImpl.class
+META-INF\annotations\org.jenkinsci.Symbol
+hudson\plugins\pbc_compile\Messages.class
+hudson\plugins\pbc_compile\PbcCompileErrorNote$DescriptorImpl.class
+hudson\plugins\pbc_compile\PbcCompileWarningNote$DescriptorImpl.class
+hudson\plugins\pbc_compile\PbcCompilerConsoleAnnotator.class
+hudson\plugins\pbc_compile\PbcCompileKillingVeto.class
+hudson\plugins\pbc_compile\PbcCompileWarningNote.class
+hudson\plugins\pbc_compile\PbcCompileBuilder$DescriptorImpl.class
+hudson\plugins\pbc_compile\PbcCompileInstallation.class
+hudson\plugins\pbc_compile\PbcCompileBuilder.class
+hudson\plugins\pbc_compile\PbcCompileErrorNote.class
+hudson\plugins\pbc_compile\PbcCompileInstallation.stapler
+hudson\plugins\pbc_compile\PbcCompileBuilder.stapler
+hudson\plugins\pbc_compile\PbcCompileConsoleParser.class
+META-INF\annotations\hudson.Extension

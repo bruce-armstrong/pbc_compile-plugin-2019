@@ -1,0 +1,5 @@
+hudson.plugins.pbc_compile.PbcCompileBuilder$DescriptorImpl
+hudson.plugins.pbc_compile.PbcCompileErrorNote$DescriptorImpl
+hudson.plugins.pbc_compile.PbcCompileInstallation$DescriptorImpl
+hudson.plugins.pbc_compile.PbcCompileKillingVeto
+hudson.plugins.pbc_compile.PbcCompileWarningNote$DescriptorImpl
