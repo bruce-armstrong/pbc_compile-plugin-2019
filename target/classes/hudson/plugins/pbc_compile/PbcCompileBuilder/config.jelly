@@ -23,12 +23,10 @@ THE SOFTWARE.
 -->
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
-    <f:entry title="${%PBC Version}">
-        <select class="setting-input" name="PbcCompileBuilder.pbcCompileName">
-            <option>(Default)</option>
-            <j:forEach var="inst" items="${descriptor.installations}">
-                <f:option selected="${inst.name==instance.pbcCompileName}">${inst.name}</f:option>
-            </j:forEach>
+    <f:entry title="${%PBC Version}" field="execName">
+        <select name="PbcCompileBuilder.execName">
+        	<f:option value="pbc170.exe" selected="${instance.execName.equals('pbc170.exe')? 'true':null}">2017</f:option>
+			<f:option value="pbc190.exe" selected="${instance.execName.equals('pbc190.exe')? 'true':null}">2019</f:option>        	
         </select>
     </f:entry>
     <f:entry title="${%pbc190.exe Command Line Arguments}" field="cmdLineArgs">

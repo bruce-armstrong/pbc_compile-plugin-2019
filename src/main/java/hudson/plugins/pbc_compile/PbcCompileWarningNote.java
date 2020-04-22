@@ -12,7 +12,7 @@ import org.jenkinsci.Symbol;
 import java.util.regex.Pattern;
 
 /**
- * Annotation for AutoCmopile warning messages
+ * Annotation for PBC warning messages
  */
 @SuppressWarnings("rawtypes")
 public class PbcCompileWarningNote extends ConsoleNote {

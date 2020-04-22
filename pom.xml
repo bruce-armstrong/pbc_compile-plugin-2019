@@ -10,7 +10,7 @@
     <artifactId>pbc-compile-2019</artifactId>
     <packaging>hpi</packaging>
     <version>0.1</version>
-    <name>Jenkins AutoCmpile Plugin</name>
+    <name>Jenkins PBC Compile Plugin</name>
     <description>Allows using PBC to build PowerBuilder targets</description>
 
     <licenses>

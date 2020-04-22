@@ -8,7 +8,7 @@ Implementation-Title: pbc-compile-2019
 Implementation-Version: 0.1
 Group-Id: org.jenkins-ci.plugins
 Short-Name: pbc-compile-2019
-Long-Name: Jenkins AutoCmpile Plugin
+Long-Name: Jenkins PBC Compile Plugin
 Plugin-Version: 0.1
 Hudson-Version: 1.625
 Jenkins-Version: 1.625

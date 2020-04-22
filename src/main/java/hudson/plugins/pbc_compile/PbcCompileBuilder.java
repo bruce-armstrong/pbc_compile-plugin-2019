@@ -56,6 +56,7 @@ public class PbcCompileBuilder extends Builder {
 	/**
 	 * GUI fields
 	 */
+	private final String execName;
 	private final String pbcCompileName;
 	private final String cmdLineArgs;
 	private final boolean continueOnBuildFailure;
@@ -65,6 +66,8 @@ public class PbcCompileBuilder extends Builder {
 	 * When this builder is created in the project configuration step, the
 	 * builder object will be created from the strings below.
 	 *
+	 * @param execName
+	 *            The PBC utility file name
 	 * @param pbcCompileName
 	 *            The PowerBuilder logical name
 	 * @param cmdLineArgs
@@ -75,13 +78,18 @@ public class PbcCompileBuilder extends Builder {
 	 *            If true, job will be unstable if there are warnings
 	 */
 	@DataBoundConstructor
-	public PbcCompileBuilder(String pbcCompileName, String cmdLineArgs, boolean continueOnBuildFailure, boolean unstableIfWarnings) {
+	public PbcCompileBuilder(String execName, String pbcCompileName, String cmdLineArgs, boolean continueOnBuildFailure, boolean unstableIfWarnings) {
+		this.execName = execName;
 		this.pbcCompileName = pbcCompileName;
 		this.cmdLineArgs = cmdLineArgs;
 		this.continueOnBuildFailure = continueOnBuildFailure;
 		this.unstableIfWarnings = unstableIfWarnings;
 	}
 
+	public String getExecName() {
+		return execName;
+	}
+	
 	public String getPbcCompileName() {
 		return pbcCompileName;
 	}
@@ -117,7 +125,7 @@ public class PbcCompileBuilder extends Builder {
 	public boolean runPbcCompile(AbstractBuild<?, ?> build, Launcher launcher, BuildListener listener)
 			throws InterruptedException, IOException {
 		ArgumentListBuilder args = new ArgumentListBuilder();
-		String execName = "pbc190.exe";
+		//String execName = "pbc190.exe";
 		PbcCompileInstallation ai = getPbcCompile();
 
 		if (ai == null) {
