@@ -1,45 +1,45 @@
-Apr 21, 2020 7:59:50 PM org.eclipse.jetty.util.log.Log initialized
-INFO: Logging initialized @1495ms
+Apr 21, 2020 8:40:59 PM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @1121ms
 Picking up existing exploded jenkins.war at D:\pbc_compile-plugin-2019\target\jenkins-for-test
-Apr 21, 2020 7:59:53 PM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+Apr 21, 2020 8:41:02 PM org.eclipse.jetty.server.handler.ContextHandler setContextPath
 WARNING: Empty contextPath
-Apr 21, 2020 7:59:53 PM org.eclipse.jetty.server.Server doStart
+Apr 21, 2020 8:41:02 PM org.eclipse.jetty.server.Server doStart
 INFO: jetty-9.2.12.v20150709
-Apr 21, 2020 7:59:54 PM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+Apr 21, 2020 8:41:02 PM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
 INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
-Apr 21, 2020 7:59:54 PM org.eclipse.jetty.server.handler.ContextHandler doStart
-INFO: Started o.e.j.w.WebAppContext@5c645b43{/,file:/D:/pbc_compile-plugin-2019/target/jenkins-for-test/,AVAILABLE}{D:\pbc_compile-plugin-2019\target\jenkins-for-test}
-Apr 21, 2020 7:59:54 PM org.eclipse.jetty.server.AbstractConnector doStart
-INFO: Started ServerConnector@5b94ccbc{HTTP/1.1}{localhost:64562}
-Apr 21, 2020 7:59:54 PM org.eclipse.jetty.server.Server doStart
-INFO: Started @4853ms
-Apr 21, 2020 7:59:54 PM jenkins.InitReactorRunner$1 onAttained
+Apr 21, 2020 8:41:02 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.w.WebAppContext@260f2144{/,file:/D:/pbc_compile-plugin-2019/target/jenkins-for-test/,AVAILABLE}{D:\pbc_compile-plugin-2019\target\jenkins-for-test}
+Apr 21, 2020 8:41:03 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@1436a7ab{HTTP/1.1}{localhost:63943}
+Apr 21, 2020 8:41:03 PM org.eclipse.jetty.server.Server doStart
+INFO: Started @4354ms
+Apr 21, 2020 8:41:03 PM jenkins.InitReactorRunner$1 onAttained
 INFO: Started initialization
-Apr 21, 2020 8:00:25 PM jenkins.InitReactorRunner$1 onAttained
+Apr 21, 2020 8:41:33 PM jenkins.InitReactorRunner$1 onAttained
 INFO: Listed all plugins
-Apr 21, 2020 8:00:26 PM jenkins.InitReactorRunner$1 onAttained
+Apr 21, 2020 8:41:34 PM jenkins.InitReactorRunner$1 onAttained
 INFO: Prepared all plugins
-Apr 21, 2020 8:00:26 PM jenkins.InitReactorRunner$1 onAttained
+Apr 21, 2020 8:41:34 PM jenkins.InitReactorRunner$1 onAttained
 INFO: Started all plugins
-Apr 21, 2020 8:00:26 PM jenkins.InitReactorRunner$1 onAttained
+Apr 21, 2020 8:41:34 PM jenkins.InitReactorRunner$1 onAttained
 INFO: Augmented all extensions
-Apr 21, 2020 8:00:29 PM jenkins.InitReactorRunner$1 onAttained
+Apr 21, 2020 8:41:37 PM jenkins.InitReactorRunner$1 onAttained
 INFO: Loaded all jobs
-Apr 21, 2020 8:00:31 PM org.jenkinsci.main.modules.sshd.SSHD start
-INFO: Started SSHD at port 64573
-Apr 21, 2020 8:00:32 PM jenkins.InitReactorRunner$1 onAttained
+Apr 21, 2020 8:41:40 PM org.jenkinsci.main.modules.sshd.SSHD start
+INFO: Started SSHD at port 63963
+Apr 21, 2020 8:41:40 PM jenkins.InitReactorRunner$1 onAttained
 INFO: Completed initialization
-Apr 21, 2020 8:00:32 PM org.eclipse.jetty.server.Server doStart
+Apr 21, 2020 8:41:40 PM org.eclipse.jetty.server.Server doStart
 INFO: jetty-9.2.12.v20150709
-Apr 21, 2020 8:00:32 PM org.eclipse.jetty.server.handler.ContextHandler doStart
-INFO: Started o.e.j.s.ServletContextHandler@36ddaebf{/,null,AVAILABLE}
-Apr 21, 2020 8:00:32 PM org.eclipse.jetty.server.AbstractConnector doStart
-INFO: Started ServerConnector@3cff0139{HTTP/1.1}{0.0.0.0:64575}
-Apr 21, 2020 8:00:32 PM org.eclipse.jetty.server.Server doStart
-INFO: Started @43438ms
-Apr 21, 2020 8:00:36 PM org.eclipse.jetty.server.AbstractConnector doStop
-INFO: Stopped ServerConnector@5b94ccbc{HTTP/1.1}{localhost:0}
-Apr 21, 2020 8:00:36 PM org.eclipse.jetty.server.handler.ContextHandler doStop
-INFO: Stopped o.e.j.w.WebAppContext@5c645b43{/,file:/D:/pbc_compile-plugin-2019/target/jenkins-for-test/,UNAVAILABLE}{D:\pbc_compile-plugin-2019\target\jenkins-for-test}
+Apr 21, 2020 8:41:40 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.s.ServletContextHandler@4c48fe92{/,null,AVAILABLE}
+Apr 21, 2020 8:41:40 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@36ddaebf{HTTP/1.1}{0.0.0.0:63965}
+Apr 21, 2020 8:41:40 PM org.eclipse.jetty.server.Server doStart
+INFO: Started @42063ms
+Apr 21, 2020 8:41:44 PM org.eclipse.jetty.server.AbstractConnector doStop
+INFO: Stopped ServerConnector@1436a7ab{HTTP/1.1}{localhost:0}
+Apr 21, 2020 8:41:44 PM org.eclipse.jetty.server.handler.ContextHandler doStop
+INFO: Stopped o.e.j.w.WebAppContext@260f2144{/,file:/D:/pbc_compile-plugin-2019/target/jenkins-for-test/,UNAVAILABLE}{D:\pbc_compile-plugin-2019\target\jenkins-for-test}
 WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
 WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.

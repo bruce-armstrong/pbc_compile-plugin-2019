@@ -27,7 +27,7 @@ THE SOFTWARE.
     <f:entry title="${%Name}" field="name">
         <f:textbox/>
     </f:entry>
-    <f:entry title="${%Path to pbc190.exe}" field="home">
+    <f:entry title="${%Path to PBC utility}" field="home">
         <f:textbox/>
     </f:entry>
     <f:entry title="${%Default parameters}" field="defaultArgs">

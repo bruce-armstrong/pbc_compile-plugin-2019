@@ -71,9 +71,9 @@ public class PbcCompileBuilder extends Builder {
 	 * @param pbcCompileName
 	 *            The PowerBuilder logical name
 	 * @param cmdLineArgs
-	 *            Whitespace separated list of command line arguments for pbc190.exe
+	 *            Whitespace separated list of command line arguments for pbc utility
 	 * @param continueOnBuildFailure
-	 *            If true, job will continue despite pbc190.exe build failure
+	 *            If true, job will continue despite pbc build failure
 	 * @param unstableIfWarnings
 	 *            If true, job will be unstable if there are warnings
 	 */
@@ -125,11 +125,10 @@ public class PbcCompileBuilder extends Builder {
 	public boolean runPbcCompile(AbstractBuild<?, ?> build, Launcher launcher, BuildListener listener)
 			throws InterruptedException, IOException {
 		ArgumentListBuilder args = new ArgumentListBuilder();
-		//String execName = "pbc190.exe";
 		PbcCompileInstallation ai = getPbcCompile();
 
 		if (ai == null) {
-			listener.getLogger().println("Path To pbc190.exe: " + execName);
+			listener.getLogger().println("Path To pbc utility: " + execName);
 			args.add(execName);
 		} else {
 			EnvVars env = build.getEnvironment(listener);
@@ -150,7 +149,7 @@ public class PbcCompileBuilder extends Builder {
 					return false;
 				}
 
-				listener.getLogger().println("Path To pbc190.exe: " + pathToPbcCompile);
+				listener.getLogger().println("Path To pbc utility: " + pathToPbcCompile);
 				args.add(pathToPbcCompile);
 
 				if (ai.getDefaultArgs() != null) {
@@ -185,7 +184,7 @@ public class PbcCompileBuilder extends Builder {
 			PbcCompileConsoleParser mbcp = new PbcCompileConsoleParser(listener.getLogger(), build.getCharset());
 			PbcCompilerConsoleAnnotator annotator = new PbcCompilerConsoleAnnotator(listener.getLogger(),
 					build.getCharset());
-			// Launch the pbc190.exe
+			// Launch the pbc utility
 			int r = launcher.launch().cmds(args).envs(env).stdout(mbcp).stdout(annotator).pwd(pwd).join();
 			// Check the number of warnings
 			if (unstableIfWarnings && mbcp.getNumberOfWarnings() > 0) {
