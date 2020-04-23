@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: hudson.plugins.pbc_compile.PbcCompileBuilderTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 sec - in hudson.plugins.pbc_compile.PbcCompileBuilderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.564 sec - in hudson.plugins.pbc_compile.PbcCompileBuilderTest

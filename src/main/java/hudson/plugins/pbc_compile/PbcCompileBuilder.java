@@ -112,7 +112,9 @@ public class PbcCompileBuilder extends Builder {
 			if (pbcCompileName != null && i.getName().equals(pbcCompileName))
 				return i;
 		}
-
+		if ( descriptor.getInstallations().length == 1 ) {
+			return descriptor.getInstallations()[0];
+		}
 		return null;
 	}
 
